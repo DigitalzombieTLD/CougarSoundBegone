@@ -8,16 +8,12 @@ namespace CougarSoundBegone
 {
 	public class CougarSoundBegoneMain : MelonMod
 	{
-		public override void OnInitializeMelon()
-		{           
-
-        }
 
 		public override void OnSceneWasLoaded(int buildIndex, string sceneName)
 		{
 			if (sceneName.Contains("MainMenu"))
 			{
-				GameObject stupidCougar = GameObject.Find("Audio/AUDIO_MainMenuDLC01/AudioMainMenuDLC01_Event_Cougar");
+				GameObject stupidCougar = GameObject.Find("Audio/AUDIO_MainMenuDLC01/AudioMainMenuDLC01_CougarCries");
 
 				if (stupidCougar != null)
                 {
@@ -27,11 +23,5 @@ namespace CougarSoundBegone
 			}
 
         }
-
-        public override void OnUpdate()
-		{
-
-		}
-
     }
 }
